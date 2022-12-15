@@ -5,20 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Time Track App</title>
     <style>
-        body {
-            background-color: rgb(248, 194, 124);
-
-        }
-
         .navbar {
             /* background-color: rgb(248, 194, 124); */
             display: flex;
-            /* margin: auto; */
+            margin: auto;
             justify-content: space-between;
-            width: 100%;
-
+            width: 98%;
+            background-color: rgb(248, 194, 124);
 
 
             /* border: 1px solid black; */
@@ -67,11 +62,11 @@
             margin-top: -10px;
         }
 
-        #logo {
+        .logo {
             width: 90%;
             height: 50%;
             margin-top: 20px;
-            margin-left: 70px;
+            margin-left: 30px;
         }
 
         #button {
@@ -109,80 +104,806 @@
 
         #updiv {
             display: flex;
-            justify-content: space-between;
+            /* justify-content: space-between; */
+            justify-content: space-around;
+            /* margin-top: 20px; */
+            width: 90%;
+            margin: auto;
+
+
         }
-        #mailimg{
-            height: 30px;
-            margin-right: -2px;
-        }
-        #getstart{
+
+
+
+        #getstart {
             display: flex;
+            margin-top: 10px;
+        }
+
+        #get {
+            width: 35%;
+            background-color: rgb(77, 77, 222);
+            border: none;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        #get:hover {
+            background-color: rgb(9, 9, 218);
+        }
+
+        /* footer css start */
+
+        #fimg {
+            width: 70%;
+            height: 45%;
+            margin-top: 20px;
+            margin-left: 30px;
+
+
+        }
+
+        footer>div>div {
+            margin: 30px;
+        }
+
+        #fbtn {
+            width: 8%;
+            background-color: rgb(27, 193, 27);
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-top: -10px;
+
+
+
+        }
+
+        #fbtn:hover {
+            background-color: green;
+        }
+
+        /* footer css end */
+
+        #app {
+            display: flex;
+            width: 98%;
+            margin: 20px 30px 20px 30px;
+
+
+
+        }
+
+        #app div {
+            width: 10%;
+            margin: auto;
+
+
+        }
+
+        #app div:nth-child(7) img {
+            width: 70%;
+            height: 70%;
+        }
+
+        #best-time-main {
+            width: 98%;
+
+            margin: auto;
+            margin-bottom: 90px;
+        }
+
+        #best-time {
+            text-align: center;
+            font-size: 25px;
+            width: 50%;
+            margin: auto;
+        }
+
+        .watch {
+            padding: 0px 10px;
+
+        }
+
+        .watch>div {
+            border-radius: 10px;
+            display: flex;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+
+        #working-time {
+            display: flex;
+            width: 98%;
+            margin: auto;
+
+            margin-bottom: 90px;
+            background-color: rgb(244, 244, 234);
+        }
+
+        #working-time div {
+            width: 45%;
+        }
+
+        #working-time li {
+            font-size: 25px;
+
+        }
+
+        #working-time li a {
+            text-decoration: none;
+        }
+
+        #working-time button {
+            width: 50%;
+            padding: 13px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(56, 49, 241);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        #working-time button:hover {
+            background-color: rgb(18, 18, 249);
+        }
+
+        #time-tracker {
+            display: flex;
+            width: 98%;
+
+            margin-bottom: 90px;
+
+        }
+
+        #time-tracker li {
+            font-size: 25px;
+
+        }
+
+        #time-tracker button {
+            width: 25%;
+            padding: 13px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(56, 49, 241);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        #time-tracker button:hover {
+            background-color: rgb(18, 18, 249);
+        }
+
+        #time-tracker div {
+            width: 90%;
+        }
+
+        #time-tracker img {
+
+            margin-left: -100px;
+
+        }
+
+        #tracking-software {
+            display: flex;
+            width: 98%;
+            margin: auto;
+
+            margin-bottom: 90px;
+            background-color: rgb(244, 244, 234);
+
+        }
+
+        #tracking-software div {
+            width: 45%;
+        }
+
+        #tracking-software li {
+            font-size: 20px;
+
+        }
+
+        #tracking-software button {
+            width: 50%;
+            padding: 13px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(56, 49, 241);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        #tracking-software button:hover {
+            background-color: rgb(18, 18, 249);
+        }
+
+        #upfooter {
+            background-color: rgb(43, 43, 120);
+            color: white;
+            width: 99%;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #upfooter h1 {
+            font-size: 60px;
+        }
+
+        #upfooter button {
+            width: 15%;
+            padding: 13px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(236, 235, 252);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        #upfooter h4 {
+            font-size: 20px;
+        }
+
+        #why-time-track {
+            width: 98%;
+            margin-bottom: 90px;
+
+        }
+
+        #why-time-track h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        #why-time-track div:nth-child(2) {
+            width: 90%;
+            margin: auto;
+
+            display: flex;
+
+
+        }
+
+        #why-time-track div:nth-child(2) div {
+            width: 18%;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            height: 200px;
+            padding: 30px;
+            border-radius: 15px;
+
+            margin: 20px;
+        }
+
+        #bussiness {
+            width: 99%;
+            margin: auto;
+            margin-bottom: 90px;
+            padding: 30px 10px 30px 10px;
+            /* padding-top: 30px;
+            padding-bottom: 30px; */
+            background-color: rgb(241, 231, 231);
+        }
+
+        #bussiness div:nth-child(2) {
+            display: flex;
+            margin: auto;
+
+            width: 90%;
+        }
+
+        #bussiness div:nth-child(2) div {
+            width: 12%;
+        }
+
+        #bussiness div:nth-child(1) {
+            margin-bottom: 40px;
+        }
+
+        #bussiness p {
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        #Reviews {
+            width: 99%;
+            text-align: center;
+            padding: 40px 10px 40px 10px;
+            margin: auto;
+            background-color: rgb(243, 207, 177);
+            font-size: 25px;
+        }
+
+        #comment {
+            width: 99%;
+            padding-top: 30px;
+            padding-bottom: 50px;
+
+        }
+
+        #comment>div {
+            width: 80%;
+            margin: auto;
+
+        }
+
+
+        #comment h2 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        #comment img {
+            display: block;
+            margin: auto;
+        }
+
+        .com-3-div {
+            display: flex;
+            width: 90%;
+            margin: auto;
+            margin-top: 30px;
+
+        }
+
+        .com-3-div>div {
+            width: 35%;
+            margin: auto;
+
+        }
+
+        .com-3-div a {
+            text-decoration: none;
+        }
+
+        .com-2-div {
+            display: flex;
+        }
+
+        .com-2-div>div:nth-child(1) {
+            width: 60%;
+        }
+
+        .com-2-div>div:nth-child(2) {
+            width: 40%;
+        }
+
+        .com-2-div a {
+            text-decoration: none;
+        }
+        #services{
+            width: 98%;
         }
     </style>
 </head>
 
 <body>
+    <!-- nav var start -->
+
+    <nav style=" background-color: rgb(248, 194, 124);">
+
+        <div class="navbar">
+            <div id="nav1">
+
+                <img class="logo" src="./img2/TRACK_YOUR_TIME__1_-removebg-preview.png" alt="">
 
 
-    <div class="navbar">
-        <div id="nav1">
 
-            <img id="logo" src="./img/TRACK YOUR TIME (1).png" alt="">
+                <button id="btneng">🌐 EN</button>
 
 
 
-            <button id="btneng">🌐 EN</button>
+
+            </div>
+
+            <div id="nav2">
+
+                <a href=""> Why Activity Time Track</a>
+
+                <a href="">App & Intregration</a>
+
+                <a href=""> Pricing</a>
+                <a href="">Support</a>
+                <a href="">Blog</a>
+
+            </div>
+            <div id="nav3">
+                <a href="">Log In</a>
+                <a href=""> <button id="button">Sign Up</button> </a>
 
 
+            </div>
+
+        </div>
+    </nav>
+    <!-- nav bar part end -->
+
+
+    <div style=" background-color: rgb(248, 194, 124);">
+        <div id="updiv">
+
+            <div style="padding: 10px;">
+
+                <h1 style="font-size: 70px;">Empower your Team with Time Tracking</h1>
+                <h4 style="font-size: 25px;">TMetric streamlines your team work so you can focus on what matters</h4>
+                <div style="display: flex; width: 70%; ">
+                    <div style="width: 40px;height: 35px; background-color: aliceblue; padding: 2px;"> <img
+                            style="width: 20px;  padding: 6px; " src="./mail img/mail img/envelope-solid.png" alt="">
+                    </div>
+                    <div>
+                        <input style="width: 450px; height: 35px;" type="text" placeholder="Enter your email address">
+                    </div>
+                </div>
+                <div id="getstart">
+
+                    <button id="get">Get Started</button>
+                    <p style="margin-left: 20px;">Fully Functional 30-Day Trial</p>
+                </div>
+            </div>
+            <div><img src="https://tmetric.com/media/nb3imgh0/img-home-heading.svg" alt=""></div>
 
 
         </div>
-
-        <div id="nav2">
-
-            <a href=""> Why Activity Time Track</a>
-
-            <a href="">App & Intregration</a>
-
-            <a href=""> Pricing</a>
-            <a href="">Support</a>
-            <a href="">Blog</a>
-
-        </div>
-        <div id="nav3">
-            <a href="">Log In</a>
-            <a href=""> <button id="button">Sign Up</button> </a>
-
-
-        </div>
-
     </div>
-    <div id="updiv">
+    <div style="margin-bottom: 90px;">
+        <div id="app">
+            <div><img src="https://tmetric.com/media/zlalggkp/saasworthy_2021_main_page.png" alt=""></div>
+            <div><img src="https://tmetric.com/media/w4mhgaul/time-tracking-software.png" alt=""></div>
+            <div><img src="https://tmetric.com/media/mg3fi1e4/crozdesk_2022_main_page.png" alt=""></div>
+            <div><img src="https://tmetric.com/media/c2eewysw/g2_2022_main_page.png" alt=""></div>
+            <div><img src="https://tmetric.com/media/cwnfzugf/icon-capterra-shortlist.png" alt=""></div>
+            <div><img src="https://tmetric.com/media/psxgf3r4/icon-software-advice-frontrunners.png" alt=""></div>
+            <div><img src="https://tmetric.com/media/jfxavlps/getapp-logotype.svg" alt=""></div>
 
-        <div>
-            <h1>Empower your Team with Time Tracking</h1>
-            <h4>TMetric streamlines your team work so you can focus on what matters</h4>
-            <div></div>
-            <img id="mailimg" src="./mail img/mail img/envelope-solid.png" alt="">
-            <input type="text" placeholder="Enter your email address">
-            <div id="getstart">
-               
-                <button>Get Started</button> <p>Fully Functional 30-Day Trial</p>
+        </div>
+    </div>
+
+    <div id="best-time-main">
+        <div id="best-time">
+            <h1>Best time tracking features for your business</h1>
+        </div>
+
+        <div style="display: flex;">
+            <div style="padding: 0px 20px 20px 20px;"><img src="https://tmetric.com/media/1kxfndjp/img-advantages.svg"
+                    alt=""></div>
+            <div class="watch">
+                <div>
+
+                    <div><img style=" padding: 10px; margin-top: 30px;"
+                            src="https://tmetric.com/media/2p4n4oyc/icon-timer-blue.svg" alt=""></div>
+                    <div style="padding: 20px;">
+                        <h3>Time Tracking</h3>
+                        <p>Capture every task you work on. Take control over time intervals by simple time tracking</p>
+                        <p><a href="">Learn More →</a></p>
+                    </div>
+                </div>
+                <div>
+                    <div><img style=" padding: 10px; margin-top: 20px;"
+                            src="https://tmetric.com/media/1niddz51/icon-project-blue.svg" alt=""></div>
+                    <div style="padding: 20px;">
+                        <h3>Project Management</h3>
+
+                    </div>
+                </div>
+                <div>
+                    <div><img style=" padding: 10px; margin-top: 20px;"
+                            src="https://tmetric.com/media/2gxihhdu/icon-team-blue.svg" alt=""></div>
+                    <div style="padding: 20px;">
+                        <h3>Team Management</h3>
+
+                    </div>
+                </div>
+                <div>
+                    <div><img style=" padding: 10px; margin-top: 20px;"
+                            src="https://tmetric.com/media/s4koycnp/icon-invoice-blue.svg" alt=""></div>
+                    <div style="padding: 20px;">
+                        <h3>Billing & Invoicing</h3>
+
+                    </div>
+                </div>
+                <div>
+                    <div><img style=" padding: 10px; margin-top: 20px;"
+                            src="https://tmetric.com/media/yoblhiut/icon-reports-blue.svg" alt=""></div>
+                    <div style="padding: 20px;">
+                        <h3>Reporting</h3>
+
+                    </div>
+                </div>
+                <div>
+                    <div><img style=" padding: 10px; margin-top: 20px;"
+                            src="https://tmetric.com/media/cajpa4uy/icon-time-off-blue.svg" alt=""></div>
+                    <div style="padding: 20px;">
+                        <h3>Time Off</h3>
+
+                    </div>
+                </div>
             </div>
         </div>
-        <div><img src="https://tmetric.com/media/nb3imgh0/img-home-heading.svg" alt=""></div>
-       
+
+    </div>
+
+    <div id="working-time">
+
+        <div>
+            <div style="width: 90%; margin: auto; margin-top:  -25px;">
+                <h1 style="font-size: 50px;">Take effective control of working time</h1>
+            </div>
+            <div style="margin-left: 25px;">
+                <ul>
+                    <li>timekeeping</li>
+                    <li>sites and apps monitoring</li>
+                    <li>activity tracking</li>
+                    <li> <a href=""> screenshots capturing </a></li>
+                    <li>task management</li>
+                    <li> <a href=""> 50+ integrations</a></li>
+                    <li> <a href="">work schedule</a> </li>
+                </ul>
+            </div>
+            <div style="margin-left: 25px; ">
+                <button>Start Free Trial</button>
+            </div>
+        </div>
+
+
+        <div><img style="margin-left: -10px;" src="https://tmetric.com/media/kssowlxe/img-activity-cases.svg" alt="">
+        </div>
+    </div>
+
+
+    <div id="time-tracker">
+        <div><img src="https://tmetric.com/media/lltfuaaz/img-report-cases-svg.svg" alt=""></div>
+
+        <div>
+
+            <div style="width: 90%; margin: auto; margin-top:  25px;">
+                <h1 style="font-size: 60px;">Achieve high profitability by using time tracker</h1>
+            </div>
+            <div style="margin-left: 25px;">
+                <ul>
+                    <li>project management</li>
+                    <li>project budgeting</li>
+                    <li>billing and invoicing</li>
+                    <li>detailed reports</li>
+                    <li>accurate payroll</li>
+
+                </ul>
+            </div>
+            <div style="margin-left: 25px; ">
+                <button>Start Free Trial</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div id="tracking-software">
+
+        <div>
+            <div style="width: 90%; margin: auto; margin-top:  50px;">
+                <h1 style="font-size: 50px;">Improve attendance with time off tracking software</h1>
+            </div>
+            <div style="margin-left: 25px; ;">
+                <ul>
+                    <li>flexible time off policy</li>
+                    <li>time off requests management</li>
+                    <li>time off calendar</li>
+                    <li>pto calculations</li>
+
+                </ul>
+            </div>
+            <div style="margin-left: 25px; ">
+                <button>Start Free Trial</button>
+            </div>
+        </div>
+
+
+        <div><img style="margin-left: -80px;" src="https://tmetric.com/media/mlzbtxv5/time-off-calendar-case.svg"
+                alt=""></div>
+    </div>
+
+    <!-- services part -->
+    <div id="services">
+        <div>
+            <h1>Integrate time tracker tool with 50+ popular services</h1>
+            <p><b>TMetric integrates with dozens of services, which lets you measure progress and activity in any tool
+                    you use.</b></p>
+            <div>
+                <div style="margin-left: 25px; ">
+                    <button>Start Free Trial</button>
+                </div>
+                <div>
+                    <p> <a href=""> Explore All Integrations →</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="services-div2">
+            <div style="display: flex; width: 80%; margin: auto;">
+                <div><img src="https://tmetric.com/media/cshbmvwf/logo-integration-gsuite.svg" alt=""></div>
+                <div><img src="https://tmetric.com/media/fnbggshs/logo-integration-msoffice.svg" alt=""></div>
+                <div><img src="https://tmetric.com/media/plvb1mg0/logo-integration-gkeep.svg" alt=""></div>
+                <div><img src="https://tmetric.com/media/smflyk5w/logo-integration-github.svg" alt=""></div>
+                <div><img src="https://tmetric.com/media/kbrcntmi/logo-integration-excel.svg" alt=""></div>
+                <div><img src="https://tmetric.com/media/4aeci1fh/logo-integration-asana.svg" alt=""></div>
+                <div><img src="https://tmetric.com/media/caxbzjss/logo-integration-jira.svg" alt=""></div>
+                <div><img src="https://tmetric.com/media/dw2nwjwv/logo-integration-gitlab.svg" alt=""></div>
+            </div>
+            <div style="display: flex; width: 80%;">
+                <div><img src="https://tmetric.com/media/me5ih5eu/logo-integration-gdocs.svg" alt=""></div>
+                <div><img src="https://tmetric.com/media/0bzmfrlf/logo-integration-trello.svg" alt=""></div>
+                <div><img src="https://tmetric.com/media/sdaj41fi/logo-integration-redmine.svg" alt=""></div>
+                <div><img src="https://tmetric.com/media/1xedbfav/logo-integration-zendesk.svg" alt=""></div>
+                <div><img src="https://tmetric.com/media/n3dmgi1p/logo-integration-wrike.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- comment part start -->
+
+
+    <div id="comment">
+        <div>
+            <div>
+                <h2>Why track time with Activity </h2>
+            </div>
+            <div class="com-2-div">
+                <div>
+                    <p><b>We ultimately went with track time because it checked a lot of items on our want list. It’s
+                            both
+                            a desktop and web app, and has an API that we were able to integrate with our business
+                            management software. While that was the biggest selling point, we also really like the user
+                            interface, the Chrome extension, and built-in integration with Jira.</b></p>
+
+                    <div style="display: flex; justify-content: space-between;">
+                        <div>
+                            <div>
+                                <p><b>BizStream team</b></p>
+                            </div>
+                            <div><img src="https://tmetric.com/media/j2klt5pd/img-rating-5.svg" alt=""></div>
+                        </div>
+                        <div>
+                            <h3> <a href=""> Read Full Story →</a></h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div><img src="https://tmetric.com/media/hznb1sgs/photo-software-developers.png" alt=""></div>
+            </div>
+            <div class="com-3-div">
+                <div><a href="">Software developers</a> </div>
+                <div> <a href=""> Marketers</a></div>
+                <div> <a href="">Designers</a></div>
+                <div><a href="">Contractors </a></div>
+                <div> <a href="">Consultants</a></div>
+                <div> <a href="">Freelancers </a> </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Reviews part start -->
+
+    <div id="Reviews">
+        <div>
+            <h2>Read Hundreds of Reviews</h2>
+            <div><img src="https://tmetric.com/media/rt1k0zjc/img-rating-4-5.svg" alt=""></div>
+            <h2>Read Hundreds of Reviews</h2>
+            <h2 style="color: rgb(59, 85, 234);">242 Reviews</h2>
+        </div>
+    </div>
+
+    <!-- bussiness word part start  -->
+
+    <div id="bussiness">
+        <div>
+            <p>Used and trusted by 3000+ businesses in the world
+            <p>
+
+        </div>
+        <div>
+            <div><img src="https://tmetric.com/media/wlmpffzm/logo_business_endygo.png" alt=""></div>
+            <div><img src="https://tmetric.com/media/0ddgehbk/logo_business_itsyndicate.png" alt=""></div>
+            <div><img src="https://tmetric.com/media/eozchehq/logo_business_pulso.png" alt=""></div>
+            <div><img src="https://tmetric.com/media/rmvok0xh/logo_business_050media.png" alt=""></div>
+            <div><img src="https://tmetric.com/media/ccpn231z/logo-business-jot-digi-tal.svg" alt=""></div>
+            <div><img src="https://tmetric.com/media/z0fhmi1j/logo-business-freshlab.svg" alt=""></div>
+            <div><img src="https://tmetric.com/media/xjogm2h2/logo-business-mvad.svg" alt=""></div>
+            <div><img src="https://tmetric.com/media/nvalaok1/logo_business_swaven.png" alt=""></div>
+
+        </div>
+    </div>
+
+
+
+    <!-- time-track part  start -->
+    <div id="why-time-track">
+
+        <div>
+            <h1>Why choose TMetric?</h1>
+
+        </div>
+        <div>
+            <div><img src="https://tmetric.com/media/zrvmvbl3/icon-straightforward.svg" alt="">
+                <h3>The most straightforward time tracking app</h3>
+            </div>
+            <div>
+
+
+                <h3>Available on all platforms: macOS, Windows, Linux, iOS, and Android</h3>
+
+            </div>
+            <div><img src="https://tmetric.com/media/igkmpmix/icon-freetrial.svg" alt="">
+                <h3>Free plan with basic time tracking for a team up to 5</h3>
+            </div>
+            <div><img src="https://tmetric.com/media/htxfmpoe/icon-reasonableprice.svg" alt="">
+                <h3>Reasonable price makes it affordable for anyone</h3>
+            </div>
+            <div><img src="https://tmetric.com/media/0uyowzzu/icon-multilang.svg" alt="">
+                <h3>Multilanguage solution</h3>
+            </div>
+        </div>
 
     </div>
 
 
-    <footer>
+
+    <div id="upfooter">
         <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <h1>Make time work for you!</h1>
+
+        </div>
+        <div> <button>Start Free Trial</button></div>
+        <div>
+            <h4>Powered by <span> <img style="margin-bottom: -7px;"
+                        src="https://tmetric.com/media/pvgfkry5/logo-devart-small-white.svg" alt=""></span> A software
+                vendor with 20 years of experience.</h4>
+        </div>
+    </div>
+
+    <!-- footer part start -->
+    <footer style="background-color: rgb(189, 183, 183);">
+        <div style="display: flex; background-color: rgb(208, 205, 205);">
+            <div><img id="fimg" src="./img2/TRACK_YOUR_TIME__1_-removebg-preview.png" alt=""></div>
+            <div>
+                <div>
+                    <h3>Applications</h3>
+
+                    <p>Desktop</p>
+                    <p>iOS</p>
+                    <p>Android</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>Browser Extensions</h3>
+                    <p>Chrome</p>
+                    <p>Firefox</p>
+                    <p>Opera</p>
+                    <p>Edge</p>
+                    <p>Safari</p>
+
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>Resources</h3>
+                    <p>Solutions</p>
+                    <p>Integrations</p>
+                    <p>Help</p>
+                    <p>Time Trackers Comparison</p>
+                    <p>Blog</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>About</h3>
+                    <p>About TMetric</p>
+                    <p>Terms of Service</p>
+                    <p>Privacy Policy</p>
+                    <p>Cookies Policy</p>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 20px;">
+            <p>We use cookies on this website. By using this site you agree that we may store and access cookies on your
+                device as explained in our <a href=""> Cookies Policy.</a></p>
+            <button id="fbtn">Got It</button>
         </div>
 
     </footer>
