@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Track App</title>
     <style>
+      
         .navbar {
             /* background-color: rgb(248, 194, 124); */
             display: flex;
@@ -25,7 +26,7 @@
 
             /* border: 1px solid red; */
             width: 25%;
-            margin-top: -10px;
+            margin-top: 25px;
         }
 
         #nav2 {
@@ -61,11 +62,12 @@
         #nav3 a:nth-child(2) {
             margin-top: -10px;
         }
+      
 
-        .logo {
-            width: 90%;
-            height: 50%;
-            margin-top: 20px;
+        #nav1 img {
+            width: 110%;
+            height: 70%;
+            margin-top: -10px;
             margin-left: 30px;
         }
 
@@ -78,12 +80,27 @@
             border: 0.5px solid black;
             border-radius: 5px;
             margin-right: 20px;
+            margin-top: 10px;
 
 
         }
 
         #button:hover {
-            background-color: rgb(237, 146, 67);
+            background-color: rgb(79, 108, 228);
+            color: aliceblue;
+        }
+        #login{
+            height: 35%;
+            /* background-color: ; */
+            background-color: rgb(248, 194, 124);
+            width: 90%;
+            border: 0.5px solid black;
+            border-radius: 5px;
+            margin-right: 40px;
+        }
+        #login:hover {
+            background-color: rgb(79, 108, 228);
+            color: aliceblue;
         }
 
 
@@ -91,16 +108,21 @@
         #btneng {
             height: 30%;
             margin-top: 30px;
-            width: 90%;
+             /* width: 70%; */
             margin-left: 20px;
-            font-size: large;
-            border-radius: 10px;
-            background-color: rgb(248, 194, 124);
+            /* font-size: large; */
+            border-radius: 5px;
+            background-color: rgb(248, 194, 124); 
+            margin-top: 10px;
         }
 
         #btneng:hover {
             background-color: rgb(246, 237, 231);
         }
+
+        /* nav bar css end */
+
+        /* upr div start */
 
         #updiv {
             display: flex;
@@ -120,15 +142,16 @@
             margin-top: 10px;
         }
 
-        #get {
-            width: 35%;
+        #getstart button {
+            width: 200%;
+            padding: 20px;
             background-color: rgb(77, 77, 222);
             border: none;
             border-radius: 5px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
         }
 
-        #get:hover {
+        #getstart button:hover {
             background-color: rgb(9, 9, 218);
         }
 
@@ -469,19 +492,90 @@
         }
         #services{
             width: 98%;
+            margin-bottom: 40px;
+            
+           
         }
+        #services h1{
+            font-size: 70px;
+        }
+        #services>div:nth-child(1){
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        #btn-div{
+            display: flex; width: 60%; justify-content: space-around; margin: auto;
+            margin-bottom: 30px;
+        }
+        #btn-div p {
+            margin-top: 10px;
+        }
+        #btn-div a{
+            text-decoration: none;
+        }
+        #services button {
+            width: 200%;
+            padding: 13px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(97, 92, 238);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+        #services button:hover {
+            background-color: rgb(13, 13, 237);
+        }
+        .services-div2 img {
+           display: block; 
+           margin: auto;
+        }
+        .services-div2 div:nth-child(1){
+            display: flex;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 20px;
+
+        }
+        .services-div2 div:nth-child(2){
+            display: flex;
+            width: 60%;
+            margin: auto;
+
+        }
+        .services-div2 div:nth-child(1)>div{
+            width: 50%;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin: 10px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            border-radius: 10px;
+            
+        }
+        .services-div2 div:nth-child(2)>div{
+            width: 50%;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin: 10px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            border-radius: 10px;
+            
+        }
+    
+       
+      
     </style>
 </head>
 
 <body>
     <!-- nav var start -->
 
-    <nav style=" background-color: rgb(248, 194, 124);">
+    <nav style=" background-color: rgb(248, 194, 124); position: fixed; width: 100%;top: 0;">
 
         <div class="navbar">
             <div id="nav1">
 
-                <img class="logo" src="./img2/TRACK_YOUR_TIME__1_-removebg-preview.png" alt="">
+              <a href="home.html"> <img class="logo"  src="./img2/TRACK_YOUR_TIME__1_-removebg-preview.png" alt=""></a> 
 
 
 
@@ -498,14 +592,14 @@
 
                 <a href="">App & Intregration</a>
 
-                <a href=""> Pricing</a>
+                <a href="pricin.html"> Pricing</a>
                 <a href="">Support</a>
                 <a href="">Blog</a>
 
             </div>
             <div id="nav3">
-                <a href="">Log In</a>
-                <a href=""> <button id="button">Sign Up</button> </a>
+                <a  href="login.html"> <button id="login">Log In</button> </a>
+                <a href="signup.html"> <button id="button">Sign Up</button> </a>
 
 
             </div>
@@ -515,7 +609,7 @@
     <!-- nav bar part end -->
 
 
-    <div style=" background-color: rgb(248, 194, 124);">
+    <div style=" background-color: rgb(248, 194, 124);margin-top: 3cm; padding-bottom: 20px;">
         <div id="updiv">
 
             <div style="padding: 10px;">
@@ -524,7 +618,7 @@
                 <h4 style="font-size: 25px;">TMetric streamlines your team work so you can focus on what matters</h4>
                 <div style="display: flex; width: 70%; ">
                     <div style="width: 40px;height: 35px; background-color: aliceblue; padding: 2px;"> <img
-                            style="width: 20px;  padding: 6px; " src="./mail img/mail img/envelope-solid.png" alt="">
+                            style="width: 20px;  padding: 6px;  " src="./mail img/mail img/envelope-solid.png" alt="">
                     </div>
                     <div>
                         <input style="width: 450px; height: 35px;" type="text" placeholder="Enter your email address">
@@ -532,8 +626,8 @@
                 </div>
                 <div id="getstart">
 
-                    <button id="get">Get Started</button>
-                    <p style="margin-left: 20px;">Fully Functional 30-Day Trial</p>
+                    <a href="signup.html"><button > Get Started</button></a>
+                    <p style="margin-left: 20%; margin-top: 20px;">Fully Functional 30-Day Trial</p>
                 </div>
             </div>
             <div><img src="https://tmetric.com/media/nb3imgh0/img-home-heading.svg" alt=""></div>
@@ -636,7 +730,7 @@
                 </ul>
             </div>
             <div style="margin-left: 25px; ">
-                <button>Start Free Trial</button>
+                <a href="signup.html"><button>Start Free Trial</button></a>
             </div>
         </div>
 
@@ -665,7 +759,7 @@
                 </ul>
             </div>
             <div style="margin-left: 25px; ">
-                <button>Start Free Trial</button>
+               <a href="signup.html"><button>Start Free Trial</button></a> 
             </div>
         </div>
 
@@ -689,7 +783,7 @@
                 </ul>
             </div>
             <div style="margin-left: 25px; ">
-                <button>Start Free Trial</button>
+               <a href="signup.html"> <button>Start Free Trial</button></a>
             </div>
         </div>
 
@@ -702,11 +796,11 @@
     <div id="services">
         <div>
             <h1>Integrate time tracker tool with 50+ popular services</h1>
-            <p><b>TMetric integrates with dozens of services, which lets you measure progress and activity in any tool
+            <p style="font-size: 20px;"><b>TMetric integrates with dozens of services, which lets you measure progress and activity in any tool
                     you use.</b></p>
-            <div>
-                <div style="margin-left: 25px; ">
-                    <button>Start Free Trial</button>
+            <div id="btn-div" >
+                <div>
+                    <a href="signup.html"> <button>Start Free Trial</button></a>
                 </div>
                 <div>
                     <p> <a href=""> Explore All Integrations →</a></p>
@@ -714,7 +808,7 @@
             </div>
         </div>
         <div class="services-div2">
-            <div style="display: flex; width: 80%; margin: auto;">
+            <div>
                 <div><img src="https://tmetric.com/media/cshbmvwf/logo-integration-gsuite.svg" alt=""></div>
                 <div><img src="https://tmetric.com/media/fnbggshs/logo-integration-msoffice.svg" alt=""></div>
                 <div><img src="https://tmetric.com/media/plvb1mg0/logo-integration-gkeep.svg" alt=""></div>
@@ -724,7 +818,7 @@
                 <div><img src="https://tmetric.com/media/caxbzjss/logo-integration-jira.svg" alt=""></div>
                 <div><img src="https://tmetric.com/media/dw2nwjwv/logo-integration-gitlab.svg" alt=""></div>
             </div>
-            <div style="display: flex; width: 80%;">
+            <div>
                 <div><img src="https://tmetric.com/media/me5ih5eu/logo-integration-gdocs.svg" alt=""></div>
                 <div><img src="https://tmetric.com/media/0bzmfrlf/logo-integration-trello.svg" alt=""></div>
                 <div><img src="https://tmetric.com/media/sdaj41fi/logo-integration-redmine.svg" alt=""></div>
@@ -900,7 +994,7 @@
                 </div>
             </div>
         </div>
-        <div style="display: flex; justify-content: space-between; margin: 20px;">
+        <div style="display: flex; justify-content: space-between; margin: 20px; position: fixed; ">
             <p>We use cookies on this website. By using this site you agree that we may store and access cookies on your
                 device as explained in our <a href=""> Cookies Policy.</a></p>
             <button id="fbtn">Got It</button>
