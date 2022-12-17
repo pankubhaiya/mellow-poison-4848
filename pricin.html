@@ -115,7 +115,7 @@
 
         #btneng:hover {
             background-color: rgb(244, 248, 247);
-            
+
         }
 
         /* nav bar css end */
@@ -142,8 +142,229 @@
 
         }
 
-
         /* <!-- pricing div end --> */
+
+
+
+        /* toggle div start  */
+
+        #btn input {
+            display: none;
+        }
+
+        #btn label {
+            position: relative;
+            display: block;
+            width: 80px;
+            height: 35px;
+            background: #bfc4c0;
+            border-radius: 20px;
+            cursor: pointer;
+            border: 2px solid rgb(80, 72, 72);
+
+
+        }
+
+        #btn label:before {
+            position: absolute;
+            top: 9%;
+            left: 5px;
+            transform: translate(-5%);
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: #eee;
+            border-radius: 50%;
+            transition: left 300ms linear;
+
+        }
+
+        #btn input:checked+label {
+
+            background: #23eb55;
+        }
+
+        #btn input:checked+label:before {
+            left: 45px;
+
+        }
+
+        #btn input:checked+h3 {
+            color: red;
+            background: #eb5223;
+        }
+
+        #btn {
+            margin-top: 30px;
+        }
+
+        #num {
+            width: 8%;
+            padding: 10px;
+        }
+
+        #main {
+            display: flex;
+            margin: auto;
+            width: 87%;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            margin-top: 20px;
+
+        }
+
+        #main>div:nth-child(1) {
+            display: flex;
+            width: 60%;
+            justify-content: right;
+
+        }
+
+        #main>div:nth-child(2) {
+            width: 80%;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #business {
+            display: flex;
+            width: 90%;
+            margin: auto;
+            justify-content: space-between;
+
+        }
+
+        #business>div {
+            width: 30%;
+            padding: 5%;
+            margin: 2%;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            border-radius: 20px;
+
+        }
+
+        #get-button {
+            width: 90%;
+            display: flex;
+            margin: auto;
+        }
+        #get-button>div{
+            width: 50%;
+            margin: auto;
+         
+
+        }
+        #get-button>div:nth-child(1){
+            
+            text-align: right;
+            margin-right: 6%;
+        }
+
+        #get-button button {
+            /* width: 200%; */
+            width: 40%;
+            padding: 20px;
+            background-color: rgb(77, 77, 222);
+            border: none;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+
+
+        /* toggle div end */
+
+
+
+        #bussiness {
+            width: 99%;
+            margin: auto;
+            /* margin-bottom: 90px; */
+            padding: 30px 10px 30px 10px;
+            /* padding-top: 30px;
+            padding-bottom: 30px; */
+            background-color: rgb(241, 231, 231);
+        }
+
+        #bussiness div:nth-child(2) {
+            display: flex;
+            margin: auto;
+
+            width: 90%;
+        }
+
+        #bussiness div:nth-child(2) div {
+            width: 12%;
+        }
+
+        #bussiness div:nth-child(1) {
+            margin-bottom: 40px;
+        }
+
+        #bussiness p {
+            text-align: center;
+            font-size: 20px;
+
+        }
+        
+        /* footer css start */
+
+        #fimg {
+            width: 70%;
+            height: 45%;
+            margin-top: 20px;
+            margin-left: 30px;
+
+
+        }
+
+        footer>div>div {
+            margin: 30px;
+        }
+
+        #fbtn {
+            width: 8%;
+            background-color: rgb(27, 193, 27);
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-top: -10px;
+
+
+
+        }
+
+        #fbtn:hover {
+            background-color: green;
+        }
+
+        /* footer css end */
+        #upfooter {
+            background-color: rgb(121, 189, 221);
+            color: white;
+            width: 99%;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #upfooter h1 {
+            font-size: 60px;
+        }
+
+        #upfooter button {
+            width: 15%;
+            padding: 13px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(236, 235, 252);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        #upfooter h4 {
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -190,13 +411,200 @@
     </div>
     <!-- pricing div end -->
 
-
+    <!-- toggle div start -->
     <div>
-        <div></div>
+        <div id="main">
+            <div>
+                <div style="margin: 20px;">
+                    <h3>Monthly</h3>
+                </div>
+                <div id="btn">
+
+                    <input type="checkbox" id="toggle-btn">
+                    <label for="toggle-btn"></label>
+
+
+                </div>
+                <div style="margin: 20px;">
+                    <h3>Annually</h3>
+                </div>
+            </div>
+            <div>
+
+                <h3>Team Size <input id="num" type="Number"></h3>
+            </div>
+        </div>
+    </div>
+    <!-- toggle div end -->
+
+    <!-- busness part start -->
+    <div>
+        <div id="business">
+            <div>
+                <h2>Business
+                </h2>
+                <div>
+                    <h1 id="7-month" >$
+                        7
+                        /month</h1>
+                </div>
+                <h4>Everything in Professional, plus:</h4>
+                <p><span>✔</span> Apps and sites usage reports</p>
+                <p><span>✔</span> Screenshots capturing</p>
+                <p><span>✔</span> Payroll for employees</p>
+                <p><span>✔</span> Time-sync with Jira </p>
+                <p><span>✔</span> Time Off Calendar</p>
+                <p><span>✔</span> Work Schedule</p>
+                <p><span>✔</span> Team Dashboard</p>
+
+            </div>
+            <div>
+                <h2>Professional
+
+                </h2>
+                <div>
+                    <h1 id="5-month">$
+                        5
+                        /month</h1>
+                </div>
+                <h4>Everything in Free, plus:</h4>
+                <p><span>✔</span> Calendar integrations: Google</p>
+                <p><span>✔</span> Billable rates and money tracking</p>
+                <p><span>✔</span>Budgeting for projects</p>
+                <p><span>✔</span>Invoicing</p>
+                <p><span>✔</span>Task management</p>
+                <p><span>✔</span> Activity levels for employees</p>
+            </div>
+            <div>
+                <h2>Free
+                </h2>
+                <div>
+                    <h1>$
+                        0
+                        /month</h1>
+                </div>
+                <p><span>✔</span> Time tracking</p>
+                <p><span>✔</span> Unlimited projects and clients</p>
+                <p><span>✔</span>Reporting</p>
+                <p><span>✔</span> Timer button in 50+ web apps</p>
+            </div>
+        </div>
+    </div>
+    <div id="get-button">
+        <div>
+            <a href="signup.html"><button> Get Started</button></a>
+        </div>
+        <div>
+            <p><b> Fully Functional 30-Day Trial</b></p>
+        </div>
+
+
+    </div>
+
+    <p style="text-align: center; margin: 50px;">Check out <a href="">detailed plan comparison</a> </p>
+
+    <div id="bussiness">
+        <div>
+            <p>Used and trusted by 3000+ businesses in the world
+            <p>
+
+        </div>
+        <div>
+            <div><img src="https://tmetric.com/media/wlmpffzm/logo_business_endygo.png" alt=""></div>
+            <div><img src="https://tmetric.com/media/0ddgehbk/logo_business_itsyndicate.png" alt=""></div>
+            <div><img src="https://tmetric.com/media/eozchehq/logo_business_pulso.png" alt=""></div>
+            <div><img src="https://tmetric.com/media/rmvok0xh/logo_business_050media.png" alt=""></div>
+            <div><img src="https://tmetric.com/media/ccpn231z/logo-business-jot-digi-tal.svg" alt=""></div>
+            <div><img src="https://tmetric.com/media/z0fhmi1j/logo-business-freshlab.svg" alt=""></div>
+            <div><img src="https://tmetric.com/media/xjogm2h2/logo-business-mvad.svg" alt=""></div>
+            <div><img src="https://tmetric.com/media/nvalaok1/logo_business_swaven.png" alt=""></div>
+
+        </div>
     </div>
 
 
+    <div id="upfooter">
+        <div>
+            <h1>Make time work for you!</h1>
+
+        </div>
+        <div> <button>Start Free Trial</button></div>
+        <div>
+            <h4>Powered by <span> <img style="margin-bottom: -7px;"
+                        src="https://tmetric.com/media/pvgfkry5/logo-devart-small-white.svg" alt=""></span> A software
+                vendor with 20 years of experience.</h4>
+        </div>
+    </div>
+
+    <footer style="background-color: rgb(189, 183, 183);">
+        <div style="display: flex; background-color: rgb(208, 205, 205);">
+            <div><img id="fimg" src="./img2/TRACK_YOUR_TIME__1_-removebg-preview.png" alt=""></div>
+            <div>
+                <div>
+                    <h3>Applications</h3>
+
+                    <p>Desktop</p>
+                    <p>iOS</p>
+                    <p>Android</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>Browser Extensions</h3>
+                    <p>Chrome</p>
+                    <p>Firefox</p>
+                    <p>Opera</p>
+                    <p>Edge</p>
+                    <p>Safari</p>
+
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>Resources</h3>
+                    <p>Solutions</p>
+                    <p>Integrations</p>
+                    <p>Help</p>
+                    <p>Time Trackers Comparison</p>
+                    <p>Blog</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>About</h3>
+                    <p>About TMetric</p>
+                    <p>Terms of Service</p>
+                    <p>Privacy Policy</p>
+                    <p>Cookies Policy</p>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 20px; position: fixed; ">
+            <p>We use cookies on this website. By using this site you agree that we may store and access cookies on your
+                device as explained in our <a href=""> Cookies Policy.</a></p>
+            <button id="fbtn">Got It</button>
+        </div>
+
+    </footer>
 
 </body>
 
 </html>
+
+<script>
+    let num = document.getElementById("num")
+
+    let lmonth = document.getElementById("5-month")
+
+    let hmonth = document.getElementById("7-month")
+
+    
+
+    num.addEventListener("input",(e)=>{
+       
+        lmonth.innerText = "$ " + e.target.value*5 + " / month "
+
+        hmonth.innerText = "$ "+ e.target.value*7  + " / month "
+
+    })
+</script>
