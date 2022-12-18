@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/logo2.png">
+    <title>App & Intregration
+    </title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar {
+
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            width: 98%;
+            background-color: rgb(162, 192, 207);
+
+
+        }
+
+        #nav1 {
+            display: flex;
+            justify-content: space-between;
+
+
+            width: 25%;
+            margin-top: 25px;
+        }
+
+        #nav2 {
+            display: flex;
+            justify-content: space-between;
+
+            width: 40%;
+            margin-top: 30px;
+
+        }
+
+        #nav2 a:hover {
+            color: rgba(228, 27, 27, 0.814);
+        }
+
+        #nav2 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #nav3 {
+            display: flex;
+            justify-content: space-between;
+
+            width: 10%;
+            margin-left: 150px;
+            margin-top: 30px;
+        }
+
+        #nav3 a:nth-child(1) {
+            text-decoration: none;
+
+            color: black;
+        }
+
+        #nav3 a:nth-child(2) {
+            margin-top: -10px;
+        }
+
+
+        #nav1 img {
+            width: 110%;
+            height: 70%;
+            margin-top: -10px;
+            margin-left: 30px;
+        }
+
+        #button {
+
+            height: 30%;
+
+            background-color: rgb(162, 192, 207);
+            width: 90%;
+            border: 0.5px solid black;
+            border-radius: 5px;
+            margin-right: 20px;
+            margin-top: 10px;
+
+
+        }
+
+        #button:hover {
+            background-color: rgb(79, 108, 228);
+            color: aliceblue;
+        }
+
+        #login {
+            height: 35%;
+
+            background-color: rgb(162, 192, 207);
+            width: 90%;
+            border: 0.5px solid black;
+            border-radius: 5px;
+            margin-right: 40px;
+        }
+
+        #login:hover {
+            background-color: rgb(79, 108, 228);
+            color: aliceblue;
+        }
+
+        #btneng {
+            height: 30%;
+            margin-top: 30px;
+
+            margin-left: 20px;
+
+            border-radius: 5px;
+            background-color: rgb(162, 192, 207);
+            margin-top: 10px;
+        }
+
+        #btneng:hover {
+            background-color: rgb(244, 248, 247);
+
+        }
+
+        /* nav bar css end */
+
+
+        /* <!-- Integrations--> */
+
+        #uprdiv {
+            width: 100%;
+            background-color: rgb(162, 192, 207);
+            padding-top: 10%;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 5%;
+
+        }
+
+        #uprdiv h1 {
+            font-size: 70px;
+        }
+
+        #uprdiv h3 {
+            font-size: 20px;
+            width: 60%;
+            text-align: center;
+            margin: auto;
+
+        }
+
+        #search-bar {
+            width: 99%;
+            margin: auto;
+        }
+
+        #search-bar input {
+
+            font-size: 20px;
+            display: block;
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+        }
+
+        #integration {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            width: 90%;
+            margin: auto;
+            gap: 20px;
+            font-size: 15px;
+            text-align: center;
+            padding: 30px;
+
+        }
+
+
+        #integration img {
+            width: 70%;
+            display: block;
+            margin: auto;
+
+
+        }
+
+        #integration div {
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            border-radius: 10px;
+            padding: 70px 30px 70px 30px;
+
+
+        }
+
+        #integration div:hover {
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            cursor: pointer;
+
+        }
+
+        #Reviews {
+            width: 99%;
+            text-align: center;
+            padding: 40px 10px 40px 10px;
+            margin: auto;
+            background-color: rgb(243, 207, 177);
+            font-size: 25px;
+        }
+
+        #fimg {
+            width: 70%;
+            height: 45%;
+            margin-top: 20px;
+            margin-left: 30px;
+
+
+        }
+
+        footer>div>div {
+            margin: 30px;
+        }
+
+        #fbtn {
+            width: 8%;
+            background-color: rgb(27, 193, 27);
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-top: -10px;
+
+
+
+        }
+
+        #fbtn:hover {
+            background-color: green;
+        }
+
+        #fil {
+            width: 50%;
+            margin: auto;
+        }
+
+        #fil select {
+            display: block;
+            width: 50%;
+            margin: auto;
+            font-size: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            border: none;
+        }
+
+        #fil select:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        /* footer css end */
+    </style>
+</head>
+
+<body>
+
+    <nav style=" background-color: rgb(162, 192, 207); position: fixed; width: 99%;top: 0;">
+
+        <div class="navbar">
+            <div id="nav1">
+
+                <a href="index.html"> <img class="logo" src="./img2/TRACK_YOUR_TIME__1_-removebg-preview.png"
+                        alt=""></a>
+                <button id="btneng">🌐 EN</button>
+
+            </div>
+
+            <div id="nav2">
+
+                <a href=""> Why Activity Time Track</a>
+
+                <a href="appIntegration.html">App & Intregration</a>
+
+                <a href="pricin.html"> Pricing</a>
+                <a href="">Support</a>
+                <a href="">Blog</a>
+
+            </div>
+            <div id="nav3">
+                <a href="login.html"> <button id="login">Log In</button> </a>
+                <a href="signup.html"> <button id="button">Sign Up</button> </a>
+
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- nav bar end -->
+
+    <!-- Integrations div start -->
+    <div id="uprdiv">
+        <div>
+            <h1>Integrations</h1>
+            <h3>Integrate TMetric with your favorite project management system and start tracking work time, create
+                reports, and monitor your team.</h3>
+        </div>
+    </div>
+
+    <div style="display: flex;">
+        <div id="fil">
+            <select id="filter">
+                <option value="">All Apps</option>
+                <option value="business">Business</option>
+                <option value="development">Development</option>
+                <option value="help disk">Help Disk</option>
+                <option value="task Management">Task Management</option>
+                <option value="project management">Project management</option>
+
+            </select>
+        </div>
+        <div id="search-bar"><input id="input" type="text" placeholder="🍳 Type service name to find integration"></div>
+    </div>
+    <div id="integration">
+        <!-- Here Append All the integration   -->
+    </div>
+
+    <div id="Reviews">
+        <div>
+            <h2>Read Hundreds of Reviews</h2>
+            <div><img src="https://tmetric.com/media/rt1k0zjc/img-rating-4-5.svg" alt=""></div>
+            <h2>Read Hundreds of Reviews</h2>
+            <h2 style="color: rgb(59, 85, 234);">242 Reviews</h2>
+        </div>
+    </div>
+
+    <footer style="background-color: rgb(189, 183, 183);">
+        <div style="display: flex; background-color: rgb(208, 205, 205);">
+            <div><img id="fimg" src="./img2/TRACK_YOUR_TIME__1_-removebg-preview.png" alt=""></div>
+            <div>
+                <div>
+                    <h3>Applications</h3>
+
+                    <p>Desktop</p>
+                    <p>iOS</p>
+                    <p>Android</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>Browser Extensions</h3>
+                    <p>Chrome</p>
+                    <p>Firefox</p>
+                    <p>Opera</p>
+                    <p>Edge</p>
+                    <p>Safari</p>
+
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>Resources</h3>
+                    <p>Solutions</p>
+                    <p>Integrations</p>
+                    <p>Help</p>
+                    <p>Time Trackers Comparison</p>
+                    <p>Blog</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>About</h3>
+                    <p>About TMetric</p>
+                    <p>Terms of Service</p>
+                    <p>Privacy Policy</p>
+                    <p>Cookies Policy</p>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 20px; position: fixed; ">
+            <p>We use cookies on this website. By using this site you agree that we may store and access cookies on your
+                device as explained in our <a href=""> Cookies Policy.</a></p>
+            <button id="fbtn">Got It</button>
+        </div>
+
+    </footer>
+
+   
+
+</body>
+
+</html>
+
+<script>
+    let userdata = []
+
+    let integration = document.getElementById("integration")
+
+    let promis = fetch("./data.json")
+
+    promis.then((resolve) => {
+        return resolve.json();
+    })
+        .then((resolve) => {
+
+            userdata = resolve
+            make(resolve)
+            console.log(resolve)
+        })
+        .catch((erorr) => {
+            console.log(erorr)
+        })
+
+
+
+
+    function make(data) {
+        integration.innerHTML = null
+
+        data.forEach((element, index) => {
+
+
+            let card = document.createElement("div")
+
+            let img = document.createElement("img")
+
+            img.setAttribute("src", element.img)
+
+            let name = document.createElement("h2")
+            name.innerText = element.name
+
+
+            let dis = document.createElement("p")
+            dis.innerText = element.dis
+            let category = document.createElement("h4")
+
+            category.innerText = element.category
+
+
+            card.append(img, dis)
+            integration.append(card)
+
+        });
+
+
+    }
+
+
+
+
+    document.getElementById("input").addEventListener("input", (e) => {
+        let searchvalue = e.target.value;
+        let newData = userdata.filter((el) => {
+            return el.name.toLowerCase().includes(searchvalue.toLowerCase());
+
+        });
+        if (newData.length == 0) {
+            make(searchvalue)
+        } else {
+            make(newData);
+        }
+
+    });
+
+    let filter = document.getElementById("filter")
+
+    filter.addEventListener("change", (e) => {
+
+        let newfilter = userdata.filter((ele, ind) => {
+
+            if (e.target.value === ele.category) {
+                return ele
+            }
+
+        })
+        if (newfilter.length == 0) {
+            make(userdata)
+        }
+        else {
+            make(newfilter)
+        }
+
+    })
+
+</script>
